@@ -1,4 +1,3 @@
-/* Flávia Glenda */
 * {
     margin: 0;
     padding: 0;
@@ -6,40 +5,74 @@
 }
 
 body {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
     background-color: rgb(39, 39, 41);
     padding: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-}
-
-input {
-    width: 98%;
-    height: 30px; 
-    padding: 5px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
+    min-height: 100vh; 
 }
 
 .container {
-border-radius: 20px;
-margin-top: 180px;
-color: black;
-width: auto;
-height: auto;
-background-color: rgb(219, 219, 219);
+    border-radius: 15px;
+    padding: 30px;
+    color: black;
+    width: 90%;
+    max-width: 500px;
+    background-color: rgb(219, 219, 219);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); 
+}
 
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: 10px 0 5px; 
+    font-weight: bold; 
+}
+
+input, select {
+    width: 100%;
+    height: 40px; 
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px; 
 }
 
 button {
-    width: 50%;
-    padding: 5px;
+    width: 100%;
+    padding: 10px;
     background-color: #448fa3;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-size: 16px; 
+    transition: background-color 0.3s ease;
+}
+
+
+button:hover {
+    background-color: #357d8d; 
+}
+
+.confirmation-gif {
+    width: 100px; 
+    margin-top: 20px; 
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 20px; 
+    }
+
+    button {
+        padding: 8px; 
+    }
 }
