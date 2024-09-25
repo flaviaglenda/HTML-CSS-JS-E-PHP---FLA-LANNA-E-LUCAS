@@ -5,8 +5,7 @@
 }
 
 body {
-    
-    background-color: rgb(39, 39, 41);
+    background-color: #76307f;
     padding: 20px;
     display: flex;
     justify-content: center;
@@ -15,15 +14,70 @@ body {
     min-height: 100vh; 
 }
 
+.navbar {
+    width: 100%; 
+    background-color: rgba(255, 255, 255, 0); 
+    padding: 20px; 
+    text-align: center;
+    position: fixed; 
+    top: 0;
+    z-index: 1000;
+    box-shadow: 8px 4px 10px rgba(0, 0, 0, 0.3); 
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    display: inline-block; 
+    margin: 0 25px; 
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-family: "Outfit", sans-serif;
+    padding: 10px; 
+    transition: color 0.3s ease, border-bottom 0.3s ease; 
+    position: relative;
+}
+
+.navbar ul li a:hover {
+    color: #c4a9c8; 
+}
+
+.navbar ul li a::after {
+    content: ""; 
+    display: block;
+    width: 0;
+    height: 3px; 
+    background-color: rgb(255, 255, 255); 
+    transition: width 0.3s ease; 
+    position: absolute;
+    left: 0;
+    bottom: -4px; 
+}
+
+.navbar ul li a:hover::after {
+    width: 100%; 
+}
+
 .container {
     border-radius: 15px;
     padding: 30px;
-    color: black;
+    color: rgb(255, 255, 255);
     width: 90%;
     max-width: 500px;
-    background-color: rgb(219, 219, 219);
+    background-color: rgba(219, 219, 219, 0.192);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); 
+    margin-top: 80px; 
 }
+
+
 
 form {
     display: flex;
@@ -48,7 +102,7 @@ input, select {
 button {
     width: 100%;
     padding: 10px;
-    background-color: #448fa3;
+    background-color: #4d1a54;
     color: white;
     border: none;
     border-radius: 5px;
@@ -59,7 +113,7 @@ button {
 
 
 button:hover {
-    background-color: #357d8d; 
+    background-color: #67286f;
 }
 
 .confirmation-gif {
