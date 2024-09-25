@@ -47,7 +47,7 @@ $sala = $_POST['select'];
                 <p><strong>Hora:</strong> <?php echo $hora; ?></p>
                 <p><strong>Sala:</strong> <?php echo $sala; ?></p>
             </div>
-            <a href="../exercicio1/form.php" class="button">Voltar</a>
+       
     </div>
 </div>
 </div>
