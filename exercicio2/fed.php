@@ -1,3 +1,4 @@
+<!-- Flávia, Lanna e Lucas -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,7 +10,14 @@
 </head>
 <body>
 
-	
+<nav class="navbar"></nav>
+        <ul>
+            <li><a href="../exercicio1/cadastrar.php">Home</a></li>
+            <li><a href="../exercicio1/form.php">Exercício 1</a></li>
+            <li><a href="../exercicio2/index.php">Exercício 2</a></li>
+            <li><a href="../exercicio3/reserva.php">Exercício 3</a></li>
+        </ul>
+    </nav>
 <div class="wrapper">
 		<h3>Deixe seu Feedback!</h3>
 		<form action="#">

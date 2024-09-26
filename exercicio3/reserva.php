@@ -1,17 +1,25 @@
-<!-- reserva.php -->
+<!-- Flávia, Lanna e Lucas -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="reserva.css">
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> <!-- SweetAlert CDN -->
-    <script src="confirmacao.js" defer></script>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../exercicio3/reserva.css"> 
     <title>Reserva de Sala</title>
 </head>
 <body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="../exercicio1/cadastrar.php">Home</a></li>
+            <li><a href="../exercicio1/form.php">Exercício 1</a></li>
+            <li><a href="../exercicio2/index.php">Exercício 2</a></li>
+            <li><a href="../exercicio3/reserva.php">Exercício 3</a></li>
+        </ul>
+    </nav>
+
     <div class="container">
-        <h1>Reserva de Sala de Reunião</h1>
+        <h1>Reserve uma sala de reunião!</h1>
         <form id="reservaForm" method="POST" action="processar_reserva.php">
             <label for="nome">Nome do Solicitante:</label>
             <input type="text" name="nome" required>
