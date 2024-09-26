@@ -1,0 +1,117 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #83378d;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    width: 100%; 
+    background-color: rgba(255, 255, 255, 0); 
+    padding: 20px; 
+    text-align: center;
+    position: fixed; 
+    top: 0;
+    z-index: 1000;
+    box-shadow: 8px 4px 10px rgba(0, 0, 0, 0.3); 
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    display: inline-block; 
+    margin: 0 25px; 
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-family: "Outfit", sans-serif;
+    padding: 10px; 
+    transition: color 0.3s ease, border-bottom 0.3s ease; 
+    position: relative;
+}
+
+.navbar ul li a:hover {
+    color: #c4a9c8; 
+}
+
+.navbar ul li a::after {
+    content: ""; 
+    display: block;
+    width: 0;
+    height: 3px; 
+    background-color: rgb(255, 255, 255); 
+    transition: width 0.3s ease; 
+    position: absolute;
+    left: 0;
+    bottom: -4px; 
+}
+
+.navbar ul li a:hover::after {
+    width: 100%; 
+}
+.container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.card h3 {
+    margin: 10px 0;
+    color: #333;
+}
+
+.card p {
+    color: #777;
+}
+
+.card .price {
+    color: #000000;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.card button {
+    padding: 10px 20px;
+    background-color: #83378d;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s;
+}
+
+.card button:hover {
+    background-color: #83378d;
+}

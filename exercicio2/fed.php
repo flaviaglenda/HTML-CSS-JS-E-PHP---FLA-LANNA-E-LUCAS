@@ -1,4 +1,25 @@
-<!-- Flávia, Lanna e Lucas -->
+<?php
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    // Capturar as informações do formulário
+    $avaliacao = $_POST['rating'];
+    $opinion = $_POST['opinion'];
+
+    echo "
+        <script src='https://cdn.jsdelivr.net/npm/sweetalert2@11'></script>
+        <script>
+            Swal.fire({
+                title: 'Obrigado pelo seu Feedback!',
+                html: `<p><strong>Avaliação:</strong> ${'★'.repeat($avaliacao)}</p>
+                       <p><strong>Comentário:</strong> $opinion</p>`,
+                icon: 'success',
+                confirmButtonText: 'OK'
+            }).then(() => {
+                window.location.href = 'index.php'; 
+            });
+        </script>
+    ";
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,14 +31,7 @@
 </head>
 <body>
 
-<nav class="navbar"></nav>
-        <ul>
-            <li><a href="../exercicio1/cadastrar.php">Home</a></li>
-            <li><a href="../exercicio1/form.php">Exercício 1</a></li>
-            <li><a href="../exercicio2/index.php">Exercício 2</a></li>
-            <li><a href="../exercicio3/reserva.php">Exercício 3</a></li>
-        </ul>
-    </nav>
+	
 <div class="wrapper">
 		<h3>Deixe seu Feedback!</h3>
 		<form action="#">
