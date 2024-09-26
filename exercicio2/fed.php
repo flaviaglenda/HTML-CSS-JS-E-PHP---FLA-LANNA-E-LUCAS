@@ -24,7 +24,7 @@
 			<textarea name="opinion" cols="30" rows="5" placeholder="Sua avaliação..."></textarea>
 			<div class="btn-group">
 				<button type="submit" class="btn submit">Enviar</button>
-				<button class="btn cancel">Cancelar</button>
+				<button class="btn cancel">Voltar</button>
 			</div>
 		</form>
 	</div>

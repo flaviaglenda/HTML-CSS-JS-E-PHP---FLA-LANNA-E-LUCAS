@@ -23,7 +23,7 @@
                 </div>
                 <h1 class="nike">nike</h1>
                 <img src="img/logo.png" alt="" class="logo">
-                <a href="#" class="share"><i class="fas fa-share-alt"></i></a>
+                
 
                 <img src="img/blue.png" alt="" class="shoe show" color="blue">
                 <img src="img/red.png" alt="" class="shoe" color="red">
@@ -45,34 +45,32 @@
                     <p class="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.</p>
                 </div>
                 <div class="color-container">
-                    <h3 class="title">Color</h3>
+                    
                     <div class="colors">
-                        <span class="color active" primary="#2175f5" color="blue"></span>
-                        <span class="color" primary="#f84848" color="red"></span>
-                        <span class="color" primary="#29b864" color="green"></span>
-                        <span class="color" primary="#ff5521" color="orange"></span>
-                        <span class="color" primary="#444" color="black"></span>
+       
+                        
+                      
                     </div>
                 </div>
                 <div class="size-container">
-                    <h3 class="title">size</h3>
+                    <h3 class="title">Tamanho</h3>
                     <div class="sizes">
-                        <span class="size">7</span>
-                        <span class="size">8</span>
-                        <span class="size active">9</span>
-                        <span class="size">10</span>
-                        <span class="size">11</span>
+                        <span class="size">35</span>
+                        <span class="size">36</span>
+                        <span class="size active">37</span>
+                        <span class="size">38</span>
+                        <span class="size">39</span>
                     </div>
                 </div>
                 <div class="buy-price">
     <form action="../exercicio2/fed.php" method="POST">
         <button type="submit" class="buy">
-            <i class="fas fa-shopping-cart"></i> Add to cart
+            <i class=""></i> Deixe seu Feedback
         </button>
     </form>
     <div class="price">
-        <i class="fas fa-dollar-sign"></i>
-        <h1>189.99</h1>
+   
+       
     </div>
 </div>
                 </div>
