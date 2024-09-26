@@ -32,7 +32,7 @@
 <body>
     <nav class="navbar">
         <ul>
-            <li><a href="#">Home</a></li>
+            <li><a href="../index.html">Home</a></li>
             <li><a href="../exercicio1/form.php">Exercício 1</a></li>
             <li><a href="../exercicio2/index.php">Exercício 2</a></li>
             <li><a href="../exercicio3/reserva.php">Exercício 3</a></li>
